@@ -13,15 +13,78 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
+      name: "Ownable",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Ownable__factory>;
+    getContractFactory(
+      name: "ERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ERC20__factory>;
+    getContractFactory(
+      name: "IERC20Metadata",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IERC20Metadata__factory>;
+    getContractFactory(
+      name: "IERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IERC20__factory>;
+    getContractFactory(
+      name: "CarbonErc20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.CarbonErc20__factory>;
+    getContractFactory(
       name: "Greeter",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Greeter__factory>;
+    getContractFactory(
+      name: "MercuryErc20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.MercuryErc20__factory>;
+    getContractFactory(
+      name: "Swap",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Swap__factory>;
 
+    getContractAt(
+      name: "Ownable",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Ownable>;
+    getContractAt(
+      name: "ERC20",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ERC20>;
+    getContractAt(
+      name: "IERC20Metadata",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IERC20Metadata>;
+    getContractAt(
+      name: "IERC20",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IERC20>;
+    getContractAt(
+      name: "CarbonErc20",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.CarbonErc20>;
     getContractAt(
       name: "Greeter",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Greeter>;
+    getContractAt(
+      name: "MercuryErc20",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.MercuryErc20>;
+    getContractAt(
+      name: "Swap",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Swap>;
 
     // default types
     getContractFactory(
