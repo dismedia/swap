@@ -6,7 +6,6 @@ export type { ERC20 } from "./ERC20";
 export type { IERC20Metadata } from "./IERC20Metadata";
 export type { IERC20 } from "./IERC20";
 export type { CarbonErc20 } from "./CarbonErc20";
-export type { Greeter } from "./Greeter";
 export type { MercuryErc20 } from "./MercuryErc20";
 export type { Swap } from "./Swap";
 
@@ -15,6 +14,5 @@ export { ERC20__factory } from "./factories/ERC20__factory";
 export { IERC20Metadata__factory } from "./factories/IERC20Metadata__factory";
 export { IERC20__factory } from "./factories/IERC20__factory";
 export { CarbonErc20__factory } from "./factories/CarbonErc20__factory";
-export { Greeter__factory } from "./factories/Greeter__factory";
 export { MercuryErc20__factory } from "./factories/MercuryErc20__factory";
 export { Swap__factory } from "./factories/Swap__factory";
