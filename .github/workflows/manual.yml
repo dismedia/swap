@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: install
-        run: npm install
+        run: npm install --ignore-scripts
 
       - name: tests
         run: npm test
