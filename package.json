@@ -25,6 +25,7 @@
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@openzeppelin/contracts": "^4.6.0",
     "dotenv": "^16.0.1",
+    "ganache": "^7.2.0",
     "hardhat-gas-reporter": "^1.0.8",
     "solidity-coverage": "^0.7.21",
     "ts-node": "^10.8.0"
